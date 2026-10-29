@@ -1,0 +1,538 @@
+
+╭───────────────────────────────────────╮
+│  INVENTORY & REORDER TRACKER          │
+│  Console edition  -  data: data  │
+╰───────────────────────────────────────╯
+
+  0 products  |  0 units  |  ₹0.00  |  0 alerts (0 urgent)
+
+  INVENTORY
+    1  Add product
+    2  View inventory
+    3  Search products
+    4  Update product
+
+  STOCK
+    5  Stock in
+    6  Stock out
+    7  Reorder alerts
+
+  ANALYTICS
+    8  Inventory valuation
+    9  NumPy summary
+   10  Category report (Pandas)
+   11  Transaction history
+   12  Monthly report
+
+  CHARTS & DATA
+   13  Stock chart
+   14  Estimated sales-value chart
+   15  Export JSON
+   16  Load demo data
+    0  Save & exit
+
+  Choose an option >   ✔ Added 12 demo product(s) with sample history. Existing products were not changed.
+
+  12 products  |  303 units  |  ₹141,030.00  |  7 alerts (2 urgent)
+
+  INVENTORY
+    1  Add product
+    2  View inventory
+    3  Search products
+    4  Update product
+
+  STOCK
+    5  Stock in
+    6  Stock out
+    7  Reorder alerts
+
+  ANALYTICS
+    8  Inventory valuation
+    9  NumPy summary
+   10  Category report (Pandas)
+   11  Transaction history
+   12  Monthly report
+
+  CHARTS & DATA
+   13  Stock chart
+   14  Estimated sales-value chart
+   15  Export JSON
+   16  Load demo data
+    0  Save & exit
+
+  Choose an option > 
+  Inventory
+┌──────┬─────────────────────┬─────────────┬───────────┬─────┬─────────┬────────────┬────────┐
+│ ID   │ Name                │ Category    │     Price │ Qty │ Reorder │      Value │ Alert  │
+├──────┼─────────────────────┼─────────────┼───────────┼─────┼─────────┼────────────┼────────┤
+│ P001 │ Wireless Mouse      │ Electronics │   ₹799.00 │  23 │      20 │ ₹18,377.00 │ -      │
+│ P002 │ USB-C Cable         │ Electronics │   ₹249.00 │  25 │      40 │  ₹6,225.00 │ NORMAL │
+│ P003 │ Mechanical Keyboard │ Electronics │ ₹2,499.00 │   5 │      10 │ ₹12,495.00 │ URGENT │
+│ P004 │ A4 Notebook         │ Stationery  │    ₹60.00 │  50 │      50 │  ₹3,000.00 │ NORMAL │
+│ P005 │ Gel Pen (Box of 10) │ Stationery  │   ₹120.00 │  45 │      25 │  ₹5,400.00 │ -      │
+│ P006 │ Stapler             │ Stationery  │   ₹150.00 │   8 │       8 │  ₹1,200.00 │ NORMAL │
+│ P007 │ Office Chair        │ Furniture   │ ₹5,499.00 │   5 │       5 │ ₹27,495.00 │ NORMAL │
+│ P008 │ Desk Lamp           │ Furniture   │   ₹899.00 │   0 │       6 │      ₹0.00 │ URGENT │
+│ P009 │ Water Bottle        │ Home        │   ₹349.00 │  35 │      20 │ ₹12,215.00 │ -      │
+│ P010 │ Laptop Stand        │ Electronics │ ₹1,299.00 │  30 │      12 │ ₹38,970.00 │ -      │
+│ P011 │ Whiteboard Marker   │ Stationery  │    ₹45.00 │  55 │      60 │  ₹2,475.00 │ NORMAL │
+│ P012 │ Extension Board     │ Electronics │   ₹599.00 │  22 │      10 │ ₹13,178.00 │ -      │
+└──────┴─────────────────────┴─────────────┴───────────┴─────┴─────────┴────────────┴────────┘
+  Total stock value: ₹141,030.00
+
+  12 products  |  303 units  |  ₹141,030.00  |  7 alerts (2 urgent)
+
+  INVENTORY
+    1  Add product
+    2  View inventory
+    3  Search products
+    4  Update product
+
+  STOCK
+    5  Stock in
+    6  Stock out
+    7  Reorder alerts
+
+  ANALYTICS
+    8  Inventory valuation
+    9  NumPy summary
+   10  Category report (Pandas)
+   11  Transaction history
+   12  Monthly report
+
+  CHARTS & DATA
+   13  Stock chart
+   14  Estimated sales-value chart
+   15  Export JSON
+   16  Load demo data
+    0  Save & exit
+
+  Choose an option >   Search by ID, name or category: 
+  1 match(es) for 'mouse'
+┌──────┬────────────────┬─────────────┬─────────┬─────┬─────────┬────────────┬───────┐
+│ ID   │ Name           │ Category    │   Price │ Qty │ Reorder │      Value │ Alert │
+├──────┼────────────────┼─────────────┼─────────┼─────┼─────────┼────────────┼───────┤
+│ P001 │ Wireless Mouse │ Electronics │ ₹799.00 │  23 │      20 │ ₹18,377.00 │ -     │
+└──────┴────────────────┴─────────────┴─────────┴─────┴─────────┴────────────┴───────┘
+
+  12 products  |  303 units  |  ₹141,030.00  |  7 alerts (2 urgent)
+
+  INVENTORY
+    1  Add product
+    2  View inventory
+    3  Search products
+    4  Update product
+
+  STOCK
+    5  Stock in
+    6  Stock out
+    7  Reorder alerts
+
+  ANALYTICS
+    8  Inventory valuation
+    9  NumPy summary
+   10  Category report (Pandas)
+   11  Transaction history
+   12  Monthly report
+
+  CHARTS & DATA
+   13  Stock chart
+   14  Estimated sales-value chart
+   15  Export JSON
+   16  Load demo data
+    0  Save & exit
+
+  Choose an option > 
+  Reorder alerts
+  NORMAL: quantity <= reorder level  |  URGENT: quantity is 0 or <= 50% of reorder level
+┌──────┬─────────────────────┬─────┬─────────┬───────────┬────────┐
+│ ID   │ Name                │ Qty │ Reorder │ Shortfall │ Alert  │
+├──────┼─────────────────────┼─────┼─────────┼───────────┼────────┤
+│ P008 │ Desk Lamp           │   0 │       6 │         6 │ URGENT │
+│ P003 │ Mechanical Keyboard │   5 │      10 │         5 │ URGENT │
+│ P002 │ USB-C Cable         │  25 │      40 │        15 │ NORMAL │
+│ P011 │ Whiteboard Marker   │  55 │      60 │         5 │ NORMAL │
+│ P004 │ A4 Notebook         │  50 │      50 │         0 │ NORMAL │
+│ P006 │ Stapler             │   8 │       8 │         0 │ NORMAL │
+│ P007 │ Office Chair        │   5 │       5 │         0 │ NORMAL │
+└──────┴─────────────────────┴─────┴─────────┴───────────┴────────┘
+
+  12 products  |  303 units  |  ₹141,030.00  |  7 alerts (2 urgent)
+
+  INVENTORY
+    1  Add product
+    2  View inventory
+    3  Search products
+    4  Update product
+
+  STOCK
+    5  Stock in
+    6  Stock out
+    7  Reorder alerts
+
+  ANALYTICS
+    8  Inventory valuation
+    9  NumPy summary
+   10  Category report (Pandas)
+   11  Transaction history
+   12  Monthly report
+
+  CHARTS & DATA
+   13  Stock chart
+   14  Estimated sales-value chart
+   15  Export JSON
+   16  Load demo data
+    0  Save & exit
+
+  Choose an option >   Product ID:   Mechanical Keyboard: 5 in stock.
+  Quantity to remove:   ✔ T000040: -3 Mechanical Keyboard. New stock: 2.
+  ! URGENT reorder alert for P003.
+
+  12 products  |  300 units  |  ₹133,533.00  |  7 alerts (2 urgent)
+
+  INVENTORY
+    1  Add product
+    2  View inventory
+    3  Search products
+    4  Update product
+
+  STOCK
+    5  Stock in
+    6  Stock out
+    7  Reorder alerts
+
+  ANALYTICS
+    8  Inventory valuation
+    9  NumPy summary
+   10  Category report (Pandas)
+   11  Transaction history
+   12  Monthly report
+
+  CHARTS & DATA
+   13  Stock chart
+   14  Estimated sales-value chart
+   15  Export JSON
+   16  Load demo data
+    0  Save & exit
+
+  Choose an option >   Product ID:   A4 Notebook: 50 in stock.
+  Quantity to add:   ✔ T000041: +10 A4 Notebook. New stock: 60.
+
+  12 products  |  310 units  |  ₹134,133.00  |  6 alerts (2 urgent)
+
+  INVENTORY
+    1  Add product
+    2  View inventory
+    3  Search products
+    4  Update product
+
+  STOCK
+    5  Stock in
+    6  Stock out
+    7  Reorder alerts
+
+  ANALYTICS
+    8  Inventory valuation
+    9  NumPy summary
+   10  Category report (Pandas)
+   11  Transaction history
+   12  Monthly report
+
+  CHARTS & DATA
+   13  Stock chart
+   14  Estimated sales-value chart
+   15  Export JSON
+   16  Load demo data
+    0  Save & exit
+
+  Choose an option > 
+  Inventory valuation
+┌──────┬─────────────────────┬─────┬────────────┬─────────────┐
+│ ID   │ Name                │ Qty │ Unit price │ Stock value │
+├──────┼─────────────────────┼─────┼────────────┼─────────────┤
+│ P001 │ Wireless Mouse      │  23 │    ₹799.00 │  ₹18,377.00 │
+│ P002 │ USB-C Cable         │  25 │    ₹249.00 │   ₹6,225.00 │
+│ P003 │ Mechanical Keyboard │   2 │  ₹2,499.00 │   ₹4,998.00 │
+│ P004 │ A4 Notebook         │  60 │     ₹60.00 │   ₹3,600.00 │
+│ P005 │ Gel Pen (Box of 10) │  45 │    ₹120.00 │   ₹5,400.00 │
+│ P006 │ Stapler             │   8 │    ₹150.00 │   ₹1,200.00 │
+│ P007 │ Office Chair        │   5 │  ₹5,499.00 │  ₹27,495.00 │
+│ P008 │ Desk Lamp           │   0 │    ₹899.00 │       ₹0.00 │
+│ P009 │ Water Bottle        │  35 │    ₹349.00 │  ₹12,215.00 │
+│ P010 │ Laptop Stand        │  30 │  ₹1,299.00 │  ₹38,970.00 │
+│ P011 │ Whiteboard Marker   │  55 │     ₹45.00 │   ₹2,475.00 │
+│ P012 │ Extension Board     │  22 │    ₹599.00 │  ₹13,178.00 │
+└──────┴─────────────────────┴─────┴────────────┴─────────────┘
+  Total inventory value: ₹134,133.00
+
+  12 products  |  310 units  |  ₹134,133.00  |  6 alerts (2 urgent)
+
+  INVENTORY
+    1  Add product
+    2  View inventory
+    3  Search products
+    4  Update product
+
+  STOCK
+    5  Stock in
+    6  Stock out
+    7  Reorder alerts
+
+  ANALYTICS
+    8  Inventory valuation
+    9  NumPy summary
+   10  Category report (Pandas)
+   11  Transaction history
+   12  Monthly report
+
+  CHARTS & DATA
+   13  Stock chart
+   14  Estimated sales-value chart
+   15  Export JSON
+   16  Load demo data
+    0  Save & exit
+
+  Choose an option > 
+  NumPy summary (units per product)
+┌───────────────────────┬─────────────┐
+│ Metric                │       Value │
+├───────────────────────┼─────────────┤
+│ Products              │          12 │
+│ Total units           │         310 │
+│ Mean units            │       25.83 │
+│ Median units          │        24.0 │
+│ Minimum units         │           0 │
+│ Maximum units         │          60 │
+│ Total inventory value │ ₹134,133.00 │
+└───────────────────────┴─────────────┘
+
+  12 products  |  310 units  |  ₹134,133.00  |  6 alerts (2 urgent)
+
+  INVENTORY
+    1  Add product
+    2  View inventory
+    3  Search products
+    4  Update product
+
+  STOCK
+    5  Stock in
+    6  Stock out
+    7  Reorder alerts
+
+  ANALYTICS
+    8  Inventory valuation
+    9  NumPy summary
+   10  Category report (Pandas)
+   11  Transaction history
+   12  Monthly report
+
+  CHARTS & DATA
+   13  Stock chart
+   14  Estimated sales-value chart
+   15  Export JSON
+   16  Load demo data
+    0  Save & exit
+
+  Choose an option > 
+  Category report (Pandas)
+┌─────────────┬──────────┬───────┬─────────────┬─────────────────┐
+│ Category    │ Products │ Units │ Stock value │ Low-stock items │
+├─────────────┼──────────┼───────┼─────────────┼─────────────────┤
+│ Electronics │        5 │   102 │  ₹81,748.00 │               2 │
+│ Furniture   │        2 │     5 │  ₹27,495.00 │               2 │
+│ Home        │        1 │    35 │  ₹12,215.00 │               0 │
+│ Stationery  │        4 │   168 │  ₹12,675.00 │               2 │
+└─────────────┴──────────┴───────┴─────────────┴─────────────────┘
+
+  12 products  |  310 units  |  ₹134,133.00  |  6 alerts (2 urgent)
+
+  INVENTORY
+    1  Add product
+    2  View inventory
+    3  Search products
+    4  Update product
+
+  STOCK
+    5  Stock in
+    6  Stock out
+    7  Reorder alerts
+
+  ANALYTICS
+    8  Inventory valuation
+    9  NumPy summary
+   10  Category report (Pandas)
+   11  Transaction history
+   12  Monthly report
+
+  CHARTS & DATA
+   13  Stock chart
+   14  Estimated sales-value chart
+   15  Export JSON
+   16  Load demo data
+    0  Save & exit
+
+  Choose an option >   How many recent transactions? (number or 'all', Enter = 20) (Enter to keep): 
+  Transaction history (5 of 41)
+┌─────────┬─────────────────────┬─────────┬──────┬─────┬────────────┬────────────┐
+│ Txn ID  │ Timestamp           │ Product │ Type │ Qty │ Unit price │      Value │
+├─────────┼─────────────────────┼─────────┼──────┼─────┼────────────┼────────────┤
+│ T000041 │ 2026-10-29 08:45:12 │ P004    │ IN   │  10 │     ₹60.00 │    ₹600.00 │
+│ T000040 │ 2026-10-29 08:45:12 │ P003    │ OUT  │   3 │  ₹2,499.00 │  ₹7,497.00 │
+│ T000039 │ 2026-10-28 11:00:00 │ P011    │ OUT  │  25 │     ₹45.00 │  ₹1,125.00 │
+│ T000038 │ 2026-10-27 11:00:00 │ P008    │ OUT  │  12 │    ₹899.00 │ ₹10,788.00 │
+│ T000037 │ 2026-10-26 11:00:00 │ P002    │ OUT  │  20 │    ₹249.00 │  ₹4,980.00 │
+└─────────┴─────────────────────┴─────────┴──────┴─────┴────────────┴────────────┘
+
+  12 products  |  310 units  |  ₹134,133.00  |  6 alerts (2 urgent)
+
+  INVENTORY
+    1  Add product
+    2  View inventory
+    3  Search products
+    4  Update product
+
+  STOCK
+    5  Stock in
+    6  Stock out
+    7  Reorder alerts
+
+  ANALYTICS
+    8  Inventory valuation
+    9  NumPy summary
+   10  Category report (Pandas)
+   11  Transaction history
+   12  Monthly report
+
+  CHARTS & DATA
+   13  Stock chart
+   14  Estimated sales-value chart
+   15  Export JSON
+   16  Load demo data
+    0  Save & exit
+
+  Choose an option > 
+  Monthly report
+┌─────────┬──────────┬───────────┬─────────────┬─────────────┐
+│ Month   │ Units in │ Units out │    Value in │   Value out │
+├─────────┼──────────┼───────────┼─────────────┼─────────────┤
+│ 2026-07 │      845 │         0 │ ₹370,965.00 │       ₹0.00 │
+│ 2026-08 │        0 │        15 │       ₹0.00 │  ₹11,985.00 │
+│ 2026-09 │        0 │       235 │       ₹0.00 │  ₹73,675.00 │
+│ 2026-10 │       10 │       295 │     ₹600.00 │ ₹151,772.00 │
+└─────────┴──────────┴───────────┴─────────────┴─────────────┘
+
+  12 products  |  310 units  |  ₹134,133.00  |  6 alerts (2 urgent)
+
+  INVENTORY
+    1  Add product
+    2  View inventory
+    3  Search products
+    4  Update product
+
+  STOCK
+    5  Stock in
+    6  Stock out
+    7  Reorder alerts
+
+  ANALYTICS
+    8  Inventory valuation
+    9  NumPy summary
+   10  Category report (Pandas)
+   11  Transaction history
+   12  Monthly report
+
+  CHARTS & DATA
+   13  Stock chart
+   14  Estimated sales-value chart
+   15  Export JSON
+   16  Load demo data
+    0  Save & exit
+
+  Choose an option >   Also open the chart in a window? [y/N]:   ✔ Chart saved to data/charts/stock_by_product.png
+
+  12 products  |  310 units  |  ₹134,133.00  |  6 alerts (2 urgent)
+
+  INVENTORY
+    1  Add product
+    2  View inventory
+    3  Search products
+    4  Update product
+
+  STOCK
+    5  Stock in
+    6  Stock out
+    7  Reorder alerts
+
+  ANALYTICS
+    8  Inventory valuation
+    9  NumPy summary
+   10  Category report (Pandas)
+   11  Transaction history
+   12  Monthly report
+
+  CHARTS & DATA
+   13  Stock chart
+   14  Estimated sales-value chart
+   15  Export JSON
+   16  Load demo data
+    0  Save & exit
+
+  Choose an option >   Also open the chart in a window? [y/N]:   ✔ Chart saved to data/charts/estimated_stock_out_value.png
+
+  12 products  |  310 units  |  ₹134,133.00  |  6 alerts (2 urgent)
+
+  INVENTORY
+    1  Add product
+    2  View inventory
+    3  Search products
+    4  Update product
+
+  STOCK
+    5  Stock in
+    6  Stock out
+    7  Reorder alerts
+
+  ANALYTICS
+    8  Inventory valuation
+    9  NumPy summary
+   10  Category report (Pandas)
+   11  Transaction history
+   12  Monthly report
+
+  CHARTS & DATA
+   13  Stock chart
+   14  Estimated sales-value chart
+   15  Export JSON
+   16  Load demo data
+    0  Save & exit
+
+  Choose an option >   ✔ Exported 12 product(s) and 41 transaction(s) to data/exports/inventory_export_20261029_084513.json
+
+  12 products  |  310 units  |  ₹134,133.00  |  6 alerts (2 urgent)
+
+  INVENTORY
+    1  Add product
+    2  View inventory
+    3  Search products
+    4  Update product
+
+  STOCK
+    5  Stock in
+    6  Stock out
+    7  Reorder alerts
+
+  ANALYTICS
+    8  Inventory valuation
+    9  NumPy summary
+   10  Category report (Pandas)
+   11  Transaction history
+   12  Monthly report
+
+  CHARTS & DATA
+   13  Stock chart
+   14  Estimated sales-value chart
+   15  Export JSON
+   16  Load demo data
+    0  Save & exit
+
+  Choose an option >   ✔ Data saved. Goodbye!
